@@ -1,0 +1,35 @@
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+   color: #333;
+}
+
+
+#blogs-container {
+   /* margin-top: 30px; */
+   margin: 30px 10px 10px 10px;
+}
+
+#blogs-container h1 h2{
+   text-align: center;
+}
+
+.blog-card {
+   background-color: #fff;
+   padding: 20px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+}
+
+.blog-card h3 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.blog-card p {
+   font-size: 1rem;
+   color: #555;
+}
