@@ -64,11 +64,11 @@ async function fetchAllBlogs() {
    blog.innerHTML = "<h1>⏳ Loading blogs...</h1>";
 
    try {
-      if (querySnapshot.empty) {
+      const querySnapshot = await getDocs(collection(db, "blogs"));
+       if (querySnapshot.empty) {
          blog.innerHTML = "<h2>😔 No blogs found.</h2>";
          return;
      }
-      const querySnapshot = await getDocs(collection(db, "blogs"));
       blog.innerHTML = "";
 
       querySnapshot.forEach((doc) => {
